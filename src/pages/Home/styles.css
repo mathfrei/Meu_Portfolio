@@ -1,0 +1,409 @@
+
+/*
+:root {
+    --body-bg-color: #22212C;
+    --text-color: #837E9F;
+    --bg-cards: #302F3D;
+    --bg-techs: #CB92B1;
+  }
+*/
+
+/*Corpo da página*/
+  body {
+    background-color:  #22212C;
+    height: 100vh;
+  }
+
+/*Div Main/ Corpo principal  flex*/
+
+.Main {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+
+
+
+/*Portifólio*/  
+  #portfoliobox {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+  }
+
+  /*Margens dos blocos das páginas*/
+.bgcards {
+   margin-top: 30px;
+   margin-bottom: 30px;
+   margin-left: 20px;
+}
+
+
+  #profile {
+    width: 400px;
+    height: 300px;
+    border-radius: 25px;
+    background-color: #302F3D;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+  }
+
+  #profile-picture { 
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    margin: 20px;
+  }
+
+  strong, p {
+    font-family: 'Merriweather Sans', sans-serif;
+    color: white;
+  }
+  
+  #username {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  #userbio {
+    font-size: 12px;
+    text-align: center;
+    
+  }
+
+
+  /*Information/Informações (do usuário)*/
+  
+  #information {
+    width: 400px;
+    height: 300px;
+    border-radius: 25px;
+    background-color: #302F3D;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 32px;
+    padding-right: 52px;
+
+  }
+  
+  .location, .company, .userNickname, .twitterUserName, .blog, .email {
+    font-family: 'Merriweather Sans', sans-serif;
+    color:  #837E9F;
+    margin-top: 10px;
+    margin-left: 2px;
+    margin-bottom: 4px;
+    font-size: 15px;
+    text-align: left;
+    padding: 12px;
+  }
+
+
+  .location {
+    background: url(../assets/map-pin.svg) left 2px bottom 5px  no-repeat;
+    padding-left: 30px;
+    padding-bottom: 8px;
+    padding-right: 10px;
+  
+  }
+
+  .company {
+    background: url(../assets/briefcase.svg) left 2px top 8px no-repeat;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-right: 100px;
+  }
+
+  
+  .userNickname {
+    background: url(../assets/github.svg) left 2px no-repeat;
+    padding-left: 30px;
+    padding-top: 5px;
+  }
+
+  .twitterUserName {
+    background: url(../assets/twitter.svg) left 2px no-repeat;
+    padding-left: 30px;
+    padding-top: 5px;
+  }
+
+  .blog {
+    background: url(../assets/linkedin.svg) left 2px no-repeat;
+    padding-left: 30px;
+    padding-top: 5px;
+  }
+  
+  
+  #technologies {
+    width: 400px;
+    height: 230px;
+    border-radius: 25px;
+    background-color: #302F3D;
+    padding: 8px;
+
+  }
+
+/*formatação dos textos tecnologias (habilidades)*/
+
+#tecnologias, #skill-list{
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+
+/*title tecnologias / título tecnologias*/
+
+#main-titles {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 28px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 12px;
+  color:#837E9F;
+}
+
+/*flexbox skill-tree (tecnologias/habilidades)*/
+
+.skill-tree {
+  height: 120px;
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#skill-list {
+  background-color: #CB92B1;
+  margin: 4px;
+  width: 100px;
+  font-size: 18px;
+  border-radius: 30px;
+  text-align: center;
+}
+
+/*Experience/Experiências*/
+
+
+#Experiences {
+  width: 400px;
+  height: 300px;
+  background-color:  #302F3D;
+  border-radius: 25px;
+  padding: 8px;
+}
+
+.experience-list {
+  color:#837E9F;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 20px;
+  margin-left: 72px;
+}
+
+
+
+/*Educação/Education*/
+
+#Education {
+  width: 400px;
+  height: 350px;
+  border-radius: 25px;
+  padding: 8px;
+  background-color: #302F3D;
+  display: flex;
+  flex-direction: column;
+}
+
+
+#Education > ul {
+  margin-left: 72px;
+  color:#837E9F;
+}
+
+#Education > ul > li, em, p {
+  
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 20px;
+  color:#837E9F;
+  
+}
+
+
+/*Seção 2 -  Meus projetos*/
+
+#section-2 {
+  display: flex;
+  flex-direction: column;
+}
+/*Caixa da seção meus projetos*/
+
+#myprojects {
+  width: 1000px;
+  height: 100px;
+  background-color:  #302F3D;
+  border-radius: 25px;
+  display: flex;
+  padding: 8px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*Formatação dos textos meus projetos (My projects)*/
+#myprojects > a {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 20px;
+  color:#837E9F;
+  text-decoration: none;
+}
+
+
+
+/*Projetos Recentes*/
+
+#recentposts {
+  width: 1000px;
+  height: 100px;
+  background-color:  #302F3D;
+  border-radius: 25px;
+  display: flex;
+  padding: 8px;
+  margin-top: 2px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#recentposts > a {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 20px;
+  color:#837E9F;
+  text-decoration: none;
+}
+
+
+/*Descrição de projeto do usuário*/
+
+#description-main {
+  width: 1000px;
+  height: 200px;
+  margin-top: 2px;
+  border-radius: 25px;
+  background-color:  #302F3D;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+
+
+
+#user-description  {
+  font-family: 'Merriweather Sans', sans-serif;
+  color:#837E9F;
+}
+
+#project-profile-picture{
+  width: 150px;
+  height: 150px;
+  border-radius: 50px;
+  margin: 20px;
+}
+
+
+#description-project-2 {
+  margin-top: 15px;
+}
+
+
+#project-hashs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+/*Descrição dos últimos projetos projetos*/
+
+/*Contâiner principal*/
+
+#proj-container-main {
+  border-radius: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 2px;
+}
+
+/*Caixa de fundo dos projetos*/
+
+ #projects-container {
+  width: 480px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 50px;
+  background-color:  #302F3D;  
+  padding: 40px 40px;
+
+}
+
+
+/*Nomes dos projetos + ícones*/
+#project-folder-ico{
+  background: url(../assets/folder.svg) left 2px  no-repeat;
+  padding-left: 32px;
+  padding-top: 3px;
+
+}
+
+
+/*Descrição dos projetos*/
+
+
+
+ #repo-description {
+   margin-top: 30px;
+   margin-bottom: 30px;
+   height: 80px;
+   font-size: 18px;
+ }
+
+#rates-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#rates {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+#stars {
+  background: url(../assets/star.svg) left 2px no-repeat;
+  margin-left: 12px;
+  font-size: 25px;
+  padding-left: 30px;
+  padding-top: 0px;
+}
+
+#forks {
+  background: url(../assets/git-branch.svg) left 2px no-repeat;
+  margin-left: 12px;
+  font-size: 25px;
+  padding-left: 30px;
+  padding-top: 0px;
+  
+}
+
+
+
+#rates-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
